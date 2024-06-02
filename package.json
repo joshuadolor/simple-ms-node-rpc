@@ -1,0 +1,19 @@
+{
+    "name": "sample-ms-rpc",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "concurrently --kill-others \"nodemon ./api-gateway/index.js\" \"nodemon ./app-auth-service/index.js\" \"nodemon ./app-service/index.js\""
+    },
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+        "concurrently": "^8.2.2",
+        "nodemon": "^3.1.2"
+    },
+    "dependencies": {
+        "amqplib": "^0.10.4"
+    }
+}
